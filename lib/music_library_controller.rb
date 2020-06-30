@@ -78,7 +78,7 @@ class MusicLibraryController
 
     def play_song
         puts "Which song number would you like to play?"
-        index = gets.chomp.to_i# - 1
+        index = gets.chomp.to_i
         if index > 0 && index < Song.all.size
             song_choice = Song.all[index]
             puts "Playing #{song_choice.name} by #{song_choice.artist.name}"

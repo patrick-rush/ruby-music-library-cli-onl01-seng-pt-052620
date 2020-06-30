@@ -36,9 +36,6 @@ class Artist
         unless songs.include?(song)
             songs << song
         end
-        # if !songs.include?(song)
-        #     songs << song
-        # end
     end
 
     def genres
